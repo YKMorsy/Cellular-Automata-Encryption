@@ -60,15 +60,21 @@ Verification and Scenarios
 Beside visual inspection, there are a few ways to determine the correctness of Langton’s Ant simulation. 
 
 •	There are several known patterns that can emerge from the simulation. For example, after a certain number of steps, the ant may form a highway pattern or a spiral pattern. By running the simulation for a sufficient number of steps and checking for the presence of these known patterns, I can verify that the simulation is behaving correctly. 
+
 •	By analyzing the distribution of cell states (black or white) at different points in the simulation. If the simulation is working correctly, the distribution should be roughly equal between black and white cells. 
+
 •	By comparing the results of my simulation to the results of previous implementations, I can validate that my simulation is consistent with the expected behavior of Langton's Ant. 
+
 •	Testing different initial configurations and comparing the resulting patterns is another way to validate the correctness of the simulation. Langton's Ant is known to be highly sensitive to its initial conditions. By testing different initial configurations and comparing the resulting patterns, I can validate that the simulation is correctly capturing the sensitivity to initial conditions.
+
 To determine the validity of the encryption algorithm, I can use the following steps: 
+
 1.	Generate a key using the initial conditions of the Langton's Ant simulation. 
 2.	Encrypt an image using the generated key. 
 3.	Generate the same key with the same initial conditions. 
 4.	Decrypt the encrypted image using the generated key. 
 5.	Verify that the decrypted image is the same as the original input image. 
+
 If the decrypted image is the same as the original input image, then I can be confident that the encryption algorithm is working correctly. 
 I will also change the input used to generate the key slightly to show that the decrypted message is not the same as the original.
 As seen in the code, the verification is successful given real user input of a message and key. 
