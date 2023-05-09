@@ -1,5 +1,9 @@
 # Cellular-Automata-Encryption
+
+
 Lagont’s Ant Encryption Algorithm
+
+
 Introduction
 Description:
 In this project I propose an encryption algorithm based on a cellular automaton. A successful encryption algorithm is one that effectively protects data from unauthorized access while allowing authorized parties to access it. It should be difficult to crack, even with advanced computing resources, and provide confidentiality, integrity, and authenticity to the data. Additionally, it should be resistant to attacks such as brute-force attacks, known plaintext attacks, and chosen plaintext attacks. 
@@ -12,6 +16,8 @@ Three emergent behaviors are expected –
 2.	Chaos – where irregular patterns are created in the next 10,000 steps.
 3.	Emergent – where a “highway” pattern is created, and the ant moves in the same direction.
 In this example, an encryption key is generated given the initial input conditions provided by the user (starting state of the matrix, ant positions, ant rules), the emergent behavior is then used as a key, the message is XORed with the key to be encrypted, and then XORed again to be decrypted. The most pseudo random behavior would be simplicity and chaos emergent patterns, so step number should be less than 10,000.
+
+
 
  
 Motivation
@@ -31,6 +37,8 @@ In terms of the success of the encryption algorithm, we assume that the movement
 Course Concepts:
 This simulation uses course concepts of cellular automata, rule based modeling, and synchronous updates.
  
+ 
+
 Verification and Scenarios
 Beside visual inspection, there are a few ways to determine the correctness of Langton’s Ant simulation. 
 •	There are several known patterns that can emerge from the simulation. For example, after a certain number of steps, the ant may form a highway pattern or a spiral pattern. By running the simulation for a sufficient number of steps and checking for the presence of these known patterns, I can verify that the simulation is behaving correctly. 
@@ -47,6 +55,8 @@ If the decrypted image is the same as the original input image, then I can be co
 I will also change the input used to generate the key slightly to show that the decrypted message is not the same as the original.
 As seen in the code, the verification is successful given real user input of a message and key. 
  
+ 
+
 Results
 The results are shown and commented on in the Jupyter Notebook.
 Evaluation
